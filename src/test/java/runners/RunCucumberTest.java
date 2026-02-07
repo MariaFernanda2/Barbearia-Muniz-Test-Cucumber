@@ -1,4 +1,6 @@
-package br.com.exemplo;
+
+
+package runners;
 
 import org.junit.runner.RunWith;
 import io.cucumber.junit.Cucumber;
@@ -7,7 +9,8 @@ import io.cucumber.junit.CucumberOptions;
 @RunWith(Cucumber.class)
 @CucumberOptions(
         features = "src/test/resources/features",
-        glue = "br.com.exemplo.steps",
+        glue = "steps",
+        tags = "@serviços",
         plugin = {"pretty"}
 )
 public class RunCucumberTest {
